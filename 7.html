@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic Operation</title>
+</head>
+<body>
+    <script>
+        function Operation()
+        {
+        var num1 = +(document.getElementById("num1").value);
+        var num2 = +(document.getElementById("num2").value);
+        var op = document.getElementById("op".value);
+        if(op == '+')
+        document.getElementById("ans").value = num1 + num2;
+        else if(op == '-')
+        document.getElementById("ans").value = num1 - num2;
+        else if(op == '*')
+        document.getElementById("ans").value = num1 * num2;
+        else 
+        document.getElementById("ans").value = num1 / num2; 
+        }
+    </script>
+    <form>
+        <input type="number" id="num1" name="num1" placeholder="0" required>
+        <select name="op">
+            <option value="+" name="+">+</option>
+            <option value="-" name="-">-</option>
+            <option value="*" name="*">*</option>
+            <option value="/" name="/">/</option>
+        </select>
+        <input type="number" id="num2" name="num2" placeholder="0" required>
+        <input type="button" value="submit" name="submit" onclick="Operation()">
+        <input type="text" id="ans" name="ans" disabled placeholder="Answer">
+
+    </form>
+</body>
+</html>

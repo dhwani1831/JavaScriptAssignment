@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Result</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function result()
+		{
+			let s1 = parseInt(document.getElementById("s1").value);
+			let s2 = parseInt(document.getElementById("s2").value);
+			let s3 = parseInt(document.getElementById("s3").value);
+			let ans =document.getElementById("ans").value;
+			let total = s1 + s2 + s3;
+			if(total < 50)
+            ans = "Fail";
+        	else if(total > 50 && total < 100)
+            ans = "pass";
+        	else if(total > 100 && total < 150)
+            ans = "First Class";
+		}
+	</script>
+	<form>
+	<input type="number" name="s1" id="s1" placeholder="Enter subject 1 marks "><br><br>
+    <input type="number" name="s2" id="s2" placeholder="Enter subject 2 marks "><br><br>
+    <input type="number" name="s3" id="s3" placeholder="Enter subject 3 marks "><br><br>
+    <button type="submit" onclick="result()">Submit</button><br><br>
+
+    <input type="text" name="ans" id="ans" disabled>
+</form>
+</body>
+</html>
+

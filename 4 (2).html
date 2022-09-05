@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>min max</title>
+</head>
+<body>
+	<script>
+		function min()
+		{
+			let n1=parseInt(document.getElementById("n1").value);
+			let n2=parseInt(document.getElementById("n2").value);
+			if(n1 > n2)
+				alert("number 1 is maximum");
+			else
+				alert("number 2 is maximum");
+		}
+	</script>
+	<form>
+		<input type="number" name="n1" id="n1" placeholder="enter number 1">
+		<input type="number" name="n2" id="n2" placeholder="enter number 2">
+		<button type="submit" value="submit" name="submit" onclick="min()">Submit
+		</button>
+	</form>
+		
+
+</body>
+</html>

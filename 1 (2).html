@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Arithmetic Operations</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function calc()
+		{
+		var v1=parseInt(document.getElementById("v1").value);
+		var v2=parseInt(document.getElementById("v2").value);
+		var op=document.getElementById("op").value;
+		if(op == '+')
+			document.getElementById("ans").value = v1+v2;
+		else if(op == '-')
+			document.getElementsById("ans").value = v1-v2;
+		else if(op == '*')
+			document.getElementById("ans").value = v1*v2;
+		else if(op == '/')
+			document.getElementById("ans").value = v1/v2;
+		else
+			document.write("invalid choice");
+		}
+	</script>
+	<form>
+		<input type="number" name="v1" id="v1" placeholder="enter value" required>
+		<select name="op" id="op">
+			<option name="+" value="+">+</option>
+			<option name="-" value="-">-</option>
+			<option name="*" value="*">*</option>
+			<option name="/" value="/">/</option>
+		</select>
+		<input type="number" name="v2" id="v2" placeholder="enter value" required>
+		<input type="button" value="submit" name="submit" onclick="calc()">
+		<input type="text" name="ans" id="ans" disabled placeholder="Answer">
+	</form>
+</body>
+</html>
+
+

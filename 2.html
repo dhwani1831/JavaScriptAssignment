@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddEven</title>
+</head>
+<body>
+    <script>
+        function OddEven()
+        {
+            var num = +(document.getElementById("num").value);
+            if(num % 2 == 0)
+            {
+                alert("It is Even number");
+            }
+            else
+            {
+                alert("It is odd number");
+            }
+        }
+    </script>
+    
+    <form>
+        <table>
+            <td>
+                <tr>
+                    <input type ="text" id="num" name="num" placeholder="0" required>
+                    <button onclick="OddEven()">submit</button>
+                </tr>
+            </td>
+        </table>
+    </form>
+</body>
+</html>

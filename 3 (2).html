@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Number</title>
+</head>
+<body>
+	<script>
+		function number()
+		{
+		let no = parseInt(document.getElementById("no").value);
+        let ans = parseInt(document.getElementById("ans").value);
+        if(no < 0)
+        ans  =  " negetive";
+        else
+        ans = " positive";
+    	if(no % 2 == 0)
+        ans += "Even Number";
+        else
+        ans += "odd number";
+		}
+	</script>
+	<form>
+		<input type="number" name="no" id="no">
+        <button type="submit" onclick="number()">submit</button>
+        <input type="text" name="ans" id="ans" disabled>
+    </form>
+</body>
+</html>
